@@ -1,0 +1,86 @@
+/* super reset , RESET QU'ON PEUT UTIISER TOUT LE TEMPS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+html{
+    font-size: 62.5%;
+}
+body {
+   
+    margin:auto;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    background-color:rgb(46, 42, 42);
+}
+h1,h2,h3,h4,h5,h6,
+p,ul,ol,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{ /* il faut avoir ce bloc pour les images */
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+   
+}
+button{
+    background-color:red;
+    border:0;
+    padding: 0;
+    font-size: inherit;
+}
+
+/* theme */
+
+/* variables css */
+header h1{
+    text-align: center;
+    color: rgb(238, 230, 255);
+    font-weight: 200;
+    line-height: 8rem;
+
+
+}
+
+/* grid , ma grille */
+
+.gallery-primary{
+    max-width: 120rem;
+    margin: 5rem auto 5rem;
+    overflow: hidden;
+    background: #ffff;
+
+}
+.gallery-primary ul{
+    padding: 1rem 0 0 1rem;
+}
+
+.gallery-primary ul li{
+    display: block;
+    float: left;
+    width: calc(100% / 4 - 1rem) ;
+    margin: 0 1rem 1rem 0;
+   
+}
+.gallery-primary ul li:nth-child(5),
+:is(ul li:nth-child(6)){
+    width: calc(100% / 2 - 1rem); /* les espaces sont extremmmmmemmet importants, sinon rien n'est pris
+    en compte, ou alors, en général, ça prend en compte aléatiorement */
+}
+
+.gallery-primary ul li:nth-child(7){
+    width: calc(100% / 1 - 1rem);
+}
+
+footer *{
+    text-align: center;
+    color: #ffff;
+}
